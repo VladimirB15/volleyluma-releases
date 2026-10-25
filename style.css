@@ -5,9 +5,10 @@ header{display:flex;align-items:center;gap:14px;margin-bottom:28px}header img{wi
 header b{font-size:28px;font-weight:800;background:linear-gradient(90deg,var(--mag),#8e8be2,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
 nav{margin-left:auto;display:flex;gap:16px;font-size:15px}nav a{color:var(--t2);text-decoration:none}nav a:hover{color:var(--text)}
 h1{font-size:36px;line-height:1.2;margin:8px 0 12px}h2{font-size:22px;margin:32px 0 8px}.lead{color:var(--t2);font-size:19px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:26px 0}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:26px 0}
 .card{padding:18px;border-radius:16px;background:var(--card);border:1px solid var(--line)}.card b{display:block;margin-bottom:4px}.card span{color:var(--t2);font-size:15px}
 .btn{display:inline-block;padding:12px 20px;border-radius:12px;background:var(--acc);color:#fff;font-weight:700;text-decoration:none;margin:6px 8px 6px 0}.btn.g{background:var(--card);border:1px solid var(--line)}
 .doc{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 26px 24px}.doc p,.doc li{color:var(--t2)}.doc b{color:var(--text)}
 footer{margin-top:40px;color:var(--t3);font-size:14px;text-align:center}
 .lang{font-size:14px;color:var(--t3)}
+@media (max-width:600px){.cards{grid-template-columns:1fr}nav{display:none}}
